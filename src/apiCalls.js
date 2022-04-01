@@ -1,17 +1,15 @@
+import { mockCharacterData, mockHouseData } from '../mockData'
+
 const getHogwartsHouses = () => {
-  return fetch("https://fe-cors-proxy.herokuapp.com", {
-    headers: {
-      "Target-URL": "https://potter-server.herokuapp.com/api/v1/houses",
-    },
-  }).then((response) => response.json())
+  return new Promise(function(resolve, reject) {
+    resolve(mockHouseData);
+  })
 }
 
 const getAllCharacters = () => {
-  return fetch("https://fe-cors-proxy.herokuapp.com", {
-    headers: {
-      "Target-URL": "https://potter-server.herokuapp.com/api/v1/characters",
-    },
-  }).then((response) => response.json())
+  return new Promise(function(resolve, reject) {
+    resolve(mockCharacterData);
+  })
 }
 
 export { getHogwartsHouses, getAllCharacters }
