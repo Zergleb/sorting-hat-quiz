@@ -1,4 +1,4 @@
-import { mockCharacterData, mockHouseData } from '../mockData'
+import { mockCharacterData, mockHouseData } from './mockData'
 
 const getHogwartsHouses = () => {
   return new Promise(function(resolve, reject) {
