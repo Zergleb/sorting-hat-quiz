@@ -62,17 +62,17 @@ class Result extends Component {
         {!this.state.resultError && name && (
           <section className="result-announcement">
             <div className="announcement-txt">
-              <h1>{`${name.toUpperCase()}!`}</h1>
+              <h1>Chameleon</h1>
               <p data-testid="house-description">
-                {`Welcome to ${name}, ${userName}!
+                {`Welcome to house Chameleon, ${userName}!
                   Founded by the ${mascot}, ${founder}, and led by Professor ${headOfHouse},
-                  ${name}s are known for their ${value1.toLowerCase()}, ${value2.toLowerCase()}, 
+                  Chameleon's are known for their ${value1.toLowerCase()}, ${value2.toLowerCase()}, 
                   ${value3.toLowerCase()}, and ${value4.toLowerCase()}. Walking through the common, 
-                  you will see lots of ${color1.toLowerCase()} and ${color2.toLowerCase()} 
-                  and ${houseGhost}, the house ghost floating through walls.
-                  While at Hogwarts, your fellow ${name}s will be your family.`}
+                  you will see lots of Green and people pretending they aren't green 
+                  and Hufflepuff, the house portrait still moving on the walls.
+                  While at Hogwarts, your fellow Chameleons will be your family.`}
               </p>
-              <h2>{`Your fellow ${name}s`}</h2>
+              <h2>{`Your fellow Chameleonss`}</h2>
               <ul>
                 {this.state.houseMates.length < 1 && (
                   <p>Finding your housemates...</p>
@@ -109,3 +109,4 @@ Result.protoTypes = {
   userHouse: PropTypes.object.isRequired,
   userName: PropTypes.string.isRequired,
 }
+
