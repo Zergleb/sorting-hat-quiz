@@ -72,7 +72,7 @@ class Result extends Component {
                   and Hufflepuff, the house portrait still moving on the walls.
                   While at Hogwarts, your fellow Chameleons will be your family.`}
               </p>
-              <h2>{`Your fellow Chameleonss`}</h2>
+              <h2>{`Your fellow Chameleons'`}</h2>
               <ul>
                 {this.state.houseMates.length < 1 && (
                   <p>Finding your housemates...</p>
